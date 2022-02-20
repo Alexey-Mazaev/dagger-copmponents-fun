@@ -6,5 +6,5 @@ import dagger.Provides
 @Module
 class FightersModule {
     @Provides
-    fun provideFighters(): Fighters = Fighters(title = "fighters")
+    fun provideFighters(): Fighters = Fighters(title = "Fighters")
 }

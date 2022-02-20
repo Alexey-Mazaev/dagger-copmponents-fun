@@ -1,4 +1,13 @@
 package com.example.core
 
-interface ThirdComponent{
+import dagger.Subcomponent
+
+@Subcomponent(
+    modules = [SubComponentsModule::class]
+)
+interface ThirdComponent {
+    @Subcomponent.Factory
+    interface Factory {
+        fun create(): ThirdComponent
+    }
 }

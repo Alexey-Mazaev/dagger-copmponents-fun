@@ -1,3 +1,3 @@
 package com.example.first
 
-class Foo(val title: String)
+class Foo (val title: String)
